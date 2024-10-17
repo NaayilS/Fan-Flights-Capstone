@@ -3,12 +3,12 @@ import mongoose from 'mongoose';
 const scheduleSchema = new mongoose.Schema({
   matchNumber: Number,
   roundNumber: Number,
-  dateUtc: String,
+  dateUtc: String, 
   location: String,
   homeTeam: String,
   awayTeam: String,
   homeTeamScore: Number,
-  awayTeamScore: Number
+  awayTeamScore: Number,
 });
 
 const NBASchedule = mongoose.model('NBASchedule', scheduleSchema);
